@@ -29,3 +29,16 @@
 					-- it gives the serving local host number,Enter the below url in browser.It display "Welcome to Ember.js"
 
 				   Serving on http://localhost:4200
+
+##using generate resource command
+
+	$ ember generate resource todo name:string isDone:boolean
+
+	 create app/models/todo.js
+
+		   create tests/unit/models/todo-test.js
+
+	  create app/routes/todo.js
+	  create app/templates/todo.hbs
+
+			create tests/unit/routes/todo-test.js
