@@ -31,16 +31,16 @@
 				   Serving on http://localhost:4200
 
 ##using generate resource command
-	
-	$ ember generate resource todo name:string isDone:boolean 
+
+	$ ember generate resource todo name:string isDone:boolean
 
 	 create app/models/todo.js
-	 
-		   create tests/unit/models/todo-test.js 
-	
+
+		   create tests/unit/models/todo-test.js
+
 	  create app/routes/todo.js
 	  create app/templates/todo.hbs
-	  
+
 			create tests/unit/routes/todo-test.js
 
 ##write model function in routes/todo.js
@@ -52,10 +52,15 @@
 ## generate adapter in app
 
 		$ember g adapter application
-	
+
 		--it will create the files as follows
 
 			create app/adapters/application.js
-			
+
 			create tests/unit/adapters/application-test.js
 
+##Modifications
+
+	change the RestAdapter to FixtureAdapter in adapters/application.js
+
+	add the fixtures to the model class in model/todo.js
