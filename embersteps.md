@@ -64,3 +64,11 @@
 	change the RestAdapter to FixtureAdapter in adapters/application.js
 
 	add the fixtures to the model class in model/todo.js
+
+##write code in todo.hbs
+
+	<h1> Todos list</h1>
+	{{#each model as |item|}}
+	<li> {{item.name}}  {{item.isDone}}</li>
+	{{/each}}
+	
